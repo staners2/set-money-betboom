@@ -26,10 +26,16 @@ Pages - набор страниц сайта и действий
 main.py - точка входа
 
 # Сборка проекта
-1. poetry install
+```bash
+poetry install
+```
 
 # Получение справки по запуску скрипта
-1. poetry run python3 main.py -h
+```bash
+poetry run python3 main.py -h
+```
 
 # Запуск скрипта
-1. poetry run python3 main.py
+```bash
+poetry run python3 main.py
+```
