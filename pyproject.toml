@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "set-money-betboom"
+version = "0.1.0"
+description = ""
+authors = ["Dmitriy Aratin <dima.aratin0@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+bottle = "^0.12.23"
+selenium = "^4.5.0"
+python-dotenv = "^0.21.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
